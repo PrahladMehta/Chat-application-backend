@@ -22,6 +22,12 @@ const userRoutes=require("./routes/userRoute");
 
 app.use("/api/auth",userRoutes);
 
+app.get("/",(req,res)=>{
+
+      res.send("hello");
+      
+})
+
 const io=socket(server,{
       cors:{
             origin:"http://localhost:3000",
