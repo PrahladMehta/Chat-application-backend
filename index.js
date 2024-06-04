@@ -6,8 +6,8 @@ require("dotenv").config();
 const socket=require("socket.io");
 
  
-const server=app.listen(process.env.Port,()=>{
-      console.log("Port Listening on",process.env.Port);  
+const server=app.listen(process.env.PORT,()=>{
+      console.log("Port Listening on",process.env.PORT);  
 })
 
 mongoose.connect(process.env.Url).then(()=>{ 
