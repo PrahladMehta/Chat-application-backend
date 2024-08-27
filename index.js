@@ -30,7 +30,7 @@ app.get("/",(req,res)=>{
 
 const io=socket(server,{
       cors:{
-            origin:"https://chat-application-xi-pink.vercel.app/",
+            origin:"*",
             credentials:true,
       },
 });
